@@ -23,8 +23,8 @@ export function SiteFooter() {
               <span className="text-accent">.</span>
             </Link>
             <p className="mt-4 max-w-sm text-sm text-ink-muted">
-              Frontend engineer building fast, accessible products with React,
-              Next.js and TypeScript.
+              Full stack engineer building fast, accessible products with
+              React, Next.js, Node.js and TypeScript.
             </p>
             <a
               href={`mailto:${siteConfig.email}`}

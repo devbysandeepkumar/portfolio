@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Sandeep Kumar",
   shortName: "devbysandeep",
-  title: "Sandeep Kumar — Frontend & AI Engineer",
+  title: "Sandeep Kumar — Full Stack & AI Engineer",
   description:
-    "Portfolio of Sandeep Kumar, a frontend and AI engineer building web apps, LLM features and cloud-deployed products with React, Next.js, LangChain and AWS.",
+    "Portfolio of Sandeep Kumar, a full stack and AI engineer building web apps, LLM features and cloud-deployed products with React, Next.js, Node.js, LangChain and AWS.",
   email: "devbysandeepkumar@gmail.com",
   location: "Available worldwide · Remote",
   socials: [
@@ -19,6 +19,7 @@ export const skills = [
   "React",
   "Next.js",
   "Node.js",
+  "Express.js",
   "Tailwind CSS",
   "GSAP",
   "Lenis",
@@ -28,6 +29,7 @@ export const skills = [
   "Redis",
   "Socket.IO",
   "Microservices",
+  "REST APIs",
   "Google Auth",
   "AWS",
   "AWS ECR",
@@ -45,12 +47,12 @@ export const stackGroups = [
     items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "GSAP", "Lenis"],
   },
   {
-    label: "AI & LLM",
-    items: ["LangChain", "LangGraph", "Tavily", "RAG & agents"],
+    label: "Backend",
+    items: ["Node.js", "Express.js", "MongoDB", "Redis", "Socket.IO", "REST APIs"],
   },
   {
-    label: "Backend",
-    items: ["Node.js", "MongoDB", "Redis", "Socket.IO", "Microservices", "Google Auth"],
+    label: "AI & LLM",
+    items: ["LangChain", "LangGraph", "Tavily", "RAG & agents"],
   },
   {
     label: "Cloud & DevOps",
@@ -70,17 +72,17 @@ export const services = [
   },
   {
     number: "02",
+    title: "Backend & APIs",
+    description:
+      "Node.js and Express services with MongoDB, Redis and REST APIs — built for scale and real-time data.",
+    points: ["REST & microservices", "MongoDB & Redis", "Socket.IO live data"],
+  },
+  {
+    number: "03",
     title: "AI & LLM features",
     description:
       "LangChain and LangGraph pipelines that add real search, retrieval and agent behaviour to a product.",
     points: ["RAG & tool-calling agents", "Tavily & web search", "Prompt evaluation & guardrails"],
-  },
-  {
-    number: "03",
-    title: "Backend & real-time",
-    description:
-      "Node.js services with MongoDB and Redis, live updates over Socket.IO and clean microservice boundaries.",
-    points: ["REST & microservices", "Socket.IO live data", "Google Auth & session handling"],
   },
   {
     number: "04",
@@ -128,8 +130,13 @@ export const projects: Project[] = [
 
 export const education = [
   {
-    degree: "B.Tech, Computer Science",
-    school: "University",
+    degree: "B.Tech in Computer Science",
+    school: "Dr APJ Abdul Kamal Technical University",
     period: "2018 — 2022",
+  },
+  {
+    degree: "Full Stack Development in Coding",
+    school: "Sheriyans Coding School",
+    period: "2023",
   },
 ];

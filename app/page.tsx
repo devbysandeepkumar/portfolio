@@ -35,10 +35,10 @@ export default function HomePage() {
             className="mt-7 max-w-2xl animate-rise text-xl leading-relaxed text-ink-muted sm:text-2xl"
             style={{ animationDelay: "150ms" }}
           >
-            Frontend &amp; AI engineer. I build fast, accessible web apps with
-            React and Next.js — and the{" "}
-            <span className="text-ink">LangChain agents, Docker services and
-            AWS deploys</span>{" "}
+            Full stack &amp; AI engineer. I build fast, accessible web apps
+            with React and Next.js — and the{" "}
+            <span className="text-ink">Node.js APIs, LangChain agents, Docker
+            services and AWS deploys</span>{" "}
             behind them.
           </p>
 

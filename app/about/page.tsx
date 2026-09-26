@@ -38,16 +38,17 @@ export default function AboutPage() {
       <PageHeader
         title="About me"
         breadcrumb="About"
-        subtitle="A frontend and AI engineer focused on product craft, with enough backend and infra knowledge to ship end-to-end."
+        subtitle="A full stack and AI engineer focused on product craft, from frontend interfaces to backend APIs and cloud infra."
       />
 
       <Reveal className="mt-12">
         <div className="max-w-2xl space-y-5 text-lg leading-relaxed text-ink-muted">
           <p>
-            I&apos;m Sandeep, a web developer who enjoys turning ideas into
-            working products. Day to day that means React and Next.js
-            interfaces, LangChain features when the product needs them, and the
-            Docker and AWS plumbing that gets everything live.
+            I&apos;m Sandeep, a full stack developer who enjoys turning ideas
+            into working products. Day to day that means React and Next.js
+            interfaces, Node.js and Express APIs, LangChain features when the
+            product needs them, and the Docker and AWS plumbing that gets
+            everything live.
           </p>
           <p>
             When I&apos;m not coding you&apos;ll usually find me reading,

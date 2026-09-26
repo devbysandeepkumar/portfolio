@@ -23,9 +23,12 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
+    "full stack engineer",
     "frontend engineer",
+    "backend engineer",
     "react developer",
     "next.js",
+    "node.js",
     "typescript",
     "portfolio",
   ],
