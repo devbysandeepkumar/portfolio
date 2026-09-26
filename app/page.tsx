@@ -124,7 +124,7 @@ export default function HomePage() {
             eyebrow="Portfolio"
             title="Featured project"
             description="AI powered coffee search — React and Tailwind on the surface, LangChain and LangGraph underneath."
-            href="https://devbysandeepkumar.github.io/coffee/"
+            href="https://devbysandeepkumar.github.io/portfolio/"
             linkLabel="Live demo"
           />
           <Reveal className="mt-10">

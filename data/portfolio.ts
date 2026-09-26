@@ -115,16 +115,6 @@ export const projects: Project[] = [
       "A recipe explorer for coffee drinks: browse step-by-step recipes, or ask the built-in assistant to search for you. React and Tailwind power the interface, LangChain and LangGraph run the search agent with Tavily for live web results, and GSAP with Lenis handle page transitions and scroll. Deployed as a static build on GitHub Pages.",
     tech: ["React", "Tailwind CSS", "LangChain", "LangGraph", "Tavily", "GSAP", "Lenis"],
     href: "https://devbysandeepkumar.github.io/coffee/",
-<<<<<<< HEAD
-    image: "/images/latte.png",
-    images: [
-      "/images/latte.png",
-      "/images/cappuccino.png",
-      "/images/dalgona.png",
-      "/images/frappe.png",
-      "/images/americano.png",
-      "/images/macchiato.png",
-=======
     image: "/portfolio/images/latte.png",
     images: [
       "/portfolio/images/latte.png",
@@ -133,7 +123,6 @@ export const projects: Project[] = [
       "/portfolio/images/frappe.png",
       "/portfolio/images/americano.png",
       "/portfolio/images/macchiato.png",
->>>>>>> 82d142d (some fixes)
     ],
     year: "2026",
   },
