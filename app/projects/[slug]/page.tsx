@@ -43,51 +43,35 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
         breadcrumb={`Projects / ${project.name}`}
       />
 
-      <div className="mt-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        {project.href && (
-          <div className="overflow-hidden rounded-2xl border border-line bg-paper-raised">
-            <div className="flex items-center gap-3 border-b border-line px-4 py-3">
-              <span aria-hidden className="flex shrink-0 gap-1.5">
-                <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
-                <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
-                <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
-              </span>
-              <span className="min-w-0 flex-1 truncate rounded-md bg-paper px-3 py-1.5 font-mono text-xs text-ink-faint">
-                {project.href.replace(/^https?:\/\//, "")}
-              </span>
-              <a
-                href={project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 font-mono text-xs uppercase tracking-[0.14em] text-ink-muted transition hover:text-accent"
-              >
-                Open ↗
-              </a>
-            </div>
-            <iframe
-              src={project.href}
-              title={`${project.name} live preview`}
-              loading="lazy"
-              sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals"
-              className="h-[32rem] w-full border-0 bg-white"
-            />
-          </div>
-        )}
-
-        {project.image && (
-          <div className="relative flex min-h-[16rem] items-center justify-center overflow-hidden rounded-2xl border border-line bg-[radial-gradient(120%_120%_at_20%_0%,color-mix(in_oklab,var(--accent)_22%,transparent),transparent_70%)] p-8">
-            <span className="relative block h-full max-h-72 w-full">
-              <Image
-                src={project.image}
-                alt={`${project.name} artwork`}
-                fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-contain"
-              />
+      {project.href && (
+        <div className="mt-10 overflow-hidden rounded-2xl border border-line bg-paper-raised">
+          <div className="flex items-center gap-3 border-b border-line px-4 py-3">
+            <span aria-hidden className="flex shrink-0 gap-1.5">
+              <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+              <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
+              <span className="h-2.5 w-2.5 rounded-full bg-line-strong" />
             </span>
+            <span className="min-w-0 flex-1 truncate rounded-md bg-paper px-3 py-1.5 font-mono text-xs text-ink-faint">
+              {project.href.replace(/^https?:\/\//, "")}
+            </span>
+            <a
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 font-mono text-xs uppercase tracking-[0.14em] text-ink-muted transition hover:text-accent"
+            >
+              Open ↗
+            </a>
           </div>
-        )}
-      </div>
+          <iframe
+            src={project.href}
+            title={`${project.name} live preview`}
+            loading="lazy"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals"
+            className="h-[32rem] w-full border-0 bg-white"
+          />
+        </div>
+      )}
 
       <div className="mt-12 grid w-full gap-12 lg:grid-cols-3 lg:gap-16">
         <Reveal className="lg:col-span-2">
@@ -130,7 +114,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
         </aside>
       </div>
 
-      {gallery.length > 1 && (
+      {gallery.length > 0 && (
         <section className="mt-16">
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-line pb-5">
             <h2 className="font-display text-section">Gallery</h2>
@@ -142,7 +126,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
             {gallery.map((src, i) => (
               <li
                 key={src}
-                className="relative flex aspect-square items-center justify-center overflow-hidden rounded-xl border border-line bg-[radial-gradient(120%_120%_at_20%_0%,color-mix(in_oklab,var(--accent)_18%,transparent),transparent_70%)] p-4"
+                className="group relative flex aspect-square items-center justify-center overflow-hidden rounded-xl border border-line bg-[radial-gradient(120%_120%_at_20%_0%,color-mix(in_oklab,var(--accent)_18%,transparent),transparent_70%)] p-4"
               >
                 <span className="relative block h-full w-full">
                   <Image
@@ -150,7 +134,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
                     alt={`${project.name} artwork ${i + 1}`}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
-                    className="object-contain"
+                    className="object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                   />
                 </span>
               </li>
