@@ -14,7 +14,7 @@ export function ProjectCard({
   const number = String(index + 1).padStart(2, "0");
 
   const mediaClass = featured
-    ? "w-full border-b border-line lg:w-1/2 lg:min-h-[24rem] lg:border-b-0 lg:border-r"
+    ? "aspect-[4/3] w-full border-b border-line lg:aspect-auto lg:w-1/2 lg:min-h-[24rem] lg:border-b-0 lg:border-r"
     : "aspect-[16/9] w-full border-b border-line";
 
   const headingClass = featured
