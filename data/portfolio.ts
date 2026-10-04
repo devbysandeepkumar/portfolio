@@ -123,7 +123,12 @@ export const projects: Project[] = [
 
 export const education = [
   {
-    degree: "B.Tech in Computer Science",
+  degree: "Diploma in Computer Science & Engineering",
+  school: "Government Polytechnic",
+  period: "2019 — 2022",
+  },
+  {
+    degree: "B.Tech in Computer Science & Engineering",
     school: "Dr APJ Abdul Kamal Technical University",
     period: "2022 — 2025",
   },
