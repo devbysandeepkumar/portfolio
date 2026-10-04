@@ -125,7 +125,7 @@ export const education = [
   {
     degree: "B.Tech in Computer Science",
     school: "Dr APJ Abdul Kamal Technical University",
-    period: "2018 — 2022",
+    period: "2022 — 2025",
   },
   {
     degree: "Full Stack Development in Coding",
