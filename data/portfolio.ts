@@ -128,8 +128,8 @@ export const education = [
     period: "2022 — 2025",
   },
   {
-    degree: "Full Stack Development in Coding",
+    degree: "Full Stack & AI Development",
     school: "Sheriyans Coding School",
-    period: "2023",
+    period: "2026",
   },
 ];
